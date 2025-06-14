@@ -1,0 +1,96 @@
+/* src/styles/HeroSection.css */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 80px;
+  color: #fff;
+  background-color: #000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.hero-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  margin-top: 2rem;
+  color: #fff;
+ font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  padding-top: 200px;
+  font-size: 65px;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: transparent;
+
+  /* Add this line to scale down the video visually */
+  transform: scale(0.8); /* Adjust the value as needed */
+  
+}
+.hero-section {
+  padding-bottom: 0;  /* or reduce if it's like padding-bottom: 100px; */
+  margin-bottom: 0;
+}
+.next-section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+
+.subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3;
+  max-width: 600px;
+  color: #fff;
+}
+
+
+.video-mobile-hero-wrap,
+.video-web {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.video-web {
+  display: block;
+}
+
+.white-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+.hero-title .subtitle h1{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3;
+  max-width: 600px;
+  color: #fff;
+  justify-content: center;
+}

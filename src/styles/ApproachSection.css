@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.section.approach {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  text-align: center;
+  color: #f1f5f9;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  animation: fadeInSlow 1.5s ease-in;
+}
+
+/* Section Title Animation */
+.section.approach h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  animation: slideFade 1s ease forwards;
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+.approach-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+  padding: 0 1rem;
+}
+
+.step {
+  max-width: 260px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.step:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.step:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.step:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.step:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.step:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.step-number {
+  font-size: 26px;
+  color: #60a5fa;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  animation: pulse 2s infinite;
+}
+
+.step-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+  transition: text-shadow 0.3s ease;
+}
+
+.step-title:hover {
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.7);
+}
+
+.step-desc {
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    color: #60a5fa;
+  }
+  50% {
+    transform: scale(1.1);
+    color: #93c5fd;
+  }
+}
+
+@keyframes fadeInSlow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFade {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
