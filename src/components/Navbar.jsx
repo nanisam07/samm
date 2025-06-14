@@ -39,14 +39,14 @@ function Navbar() {
         <div className="div-block-19">
           <a href="#" className="button-block-03 orange w-inline-block">
             <div className="button-text-03">Discuss a project</div>
-            <div className="button-text-03 is-text-absolute">Discuss a project</div>
+            
             <div className="arrow-container">
               <img src="images/663a15a7c3fdd5c29507e7f0_round-arrow.svg" alt="arrow" className="arrow-svg" />
             </div>
           </a>
           <a href="https://calendly.com/ana-z5x3/15-min-introduction-call" className="button-block-03 w-inline-block ">
             <div className="button-text-03 black">Schedule a call</div>
-            <div className="button-text-03 is-text-absolute">Schedule a call</div>
+            
             <div className="arrow-container">
               <img src="images/663a15a7c3fdd5c29507e7f0_round-arrow.svg" alt="arrow" className="arrow-svg" />
             </div>
